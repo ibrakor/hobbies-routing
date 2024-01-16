@@ -1,0 +1,15 @@
+<div class="container mt-4 d-flex justify-content-center" style="position: relative; top: 70px;">
+
+  <div class="card-deck">
+    <div class="card mb-4" style="width: 20rem;" *ngFor="let photo of photos">
+      <img  id="image{{photo.id}}" src="{{photo.images.large}}"  class="card-img-top"
+           alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{ photo.title }}</h5>
+      </div>
+      <ul class="list-group list-group-flush">
+
+      </ul>
+    </div>
+  </div>
+</div>
